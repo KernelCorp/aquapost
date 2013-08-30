@@ -1,7 +1,7 @@
-body
-	position: absolute
-	width: 100%
-	min-height: 100%
+html, body
+	height: 100%
+	margin: 0
+	padding: 0
 body
 	background-color: #fff
 	background: url(../images/background-header.png) repeat-x left top #fff
@@ -13,23 +13,25 @@ body
 
 
 #main-wrapper
+	position: relative
 	width: 100%
 	min-height: 100%
-	margin-bottom: -520px
 
 
 .content
 	margin: 0 auto
 	width: 1070px
 	.left-block
+		background-image: linear-gradient(to bottom, #cce3ff, #9bc8e0)
 		display: inline-block
 		vertical-align: top
 		width: 212px
-		margin-right: 67px
+		min-height: 300px
+		margin-right: 65px
 	.right-block
 		display: inline-block
 		vertical-align: top
-		width: 796px
+		width: 793px
 		margin-right: -5px
 
 
@@ -40,22 +42,28 @@ h1, h2, h3, h4, h5, h6,
 	font-family: Roboto-Light
 	font-weight: normal
 	color: #8cbe22
+	margin: 0 0 20px
 
 h1,
 .h1
 	font-size: 32px
+	line-height: 32px
 h2,
 .h2
 	font-size: 24px
+	line-height: 24px
 h3,
 .h3
 	font-size: 20px
+	line-height: 20px
 h4,
 .h4
 	font-size: 16px
+	line-height: 16px
 h5,
 .h5
 	font-size: 14px
+	line-height: 14px
 
 .upper
 	text-transform: uppercase

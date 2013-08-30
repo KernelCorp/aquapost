@@ -38,12 +38,13 @@
 		%script{:type => 'text/javascript', :src => 'javascripts/bootstrap.js'}
 
 	%body
-		= partial 'partials/callback_request'
 		#main-wrapper
+			= partial 'partials/callback_request'
 			= partial 'partials/header'
 			.content
 				.left-block
 					= partial 'partials/left_block'
 				.right-block
 					= yield
-		= partial 'partials/footer'
+			.footer-spacer-elem
+			= partial 'partials/footer'
