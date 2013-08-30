@@ -1,0 +1,35 @@
+#user_callback.modal.hide{:tabindex => '-1', 'aria-hidden' => 'true', :role => 'dialog'}
+	%img.close{:src => 'images/close.png', 'data-dismiss' => 'modal'}
+	%form.form
+		.background
+			%fieldset
+				%legend
+					Обратный звонок
+				%label{:for => 'user_fio'}
+					ФИО
+					%sup *
+				%span.input_wrapper
+					%span.ie-border-left
+					%input{:id => 'user_fio', :type	=> 'text'}
+					%span.ie-border-right
+
+				%label{:for => 'phone'}
+					Телефон
+					%sup *
+				%span.input_wrapper
+					%span.ie-border-left
+					%input{:id => 'phone', :type	=> 'text'}
+					%span.ie-border-right
+
+				%label{:for => 'message'}
+					Комментарий
+				%span.textarea_wrapper
+					%span.ie-border-left
+					%textarea{:id => 'message'}
+					%span.ie-border-right
+
+
+				%button{:type => 'submit', :class => 'button right'}
+					%span.ie-border-left
+					Заказать
+					%span.ie-border-right

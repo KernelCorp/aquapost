@@ -1,1 +1,41 @@
 .header
+	.logo
+		%a{:href => '#'}
+			%img{:src => 'images/logo-big.png'}
+	.right-block
+		%span.phone
+			%span.code (495)
+			665-85-46
+			%span.city
+				%span.ie-border-left
+				Москва
+				%span.ie-border-right
+		%span.phone
+			%span.code (49621)
+			2-90-44
+			%span.city
+				%span.ie-border-left
+				Дубна
+				%span.ie-border-right
+
+		%span.call_button
+			%button{:type => 'button', :class=> 'button', 'data-toggle' => 'modal', 'data-target' => '#user_callback'}
+				%span.ei-border-left
+				Заказать звонок с сайта
+				%span.ei-border-right
+
+		.menu-block
+			%ul.menu
+				%li
+					%a.menu-link{:href=> '#'} О КОМПАНИИ
+				%li
+					%a.menu-link{:href=> '#'} КАТАЛОГ
+				%li
+					%a.menu-link{:href=> '#'} ДИЛЕРАМ
+				%li
+					%a.menu-link{:href=> '#'} ГДЕ КУПИТЬ
+				%li
+					%a.menu-link{:href=> '#'} КОНТАКТЫ
+
+
+
