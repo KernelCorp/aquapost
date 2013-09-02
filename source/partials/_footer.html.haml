@@ -22,20 +22,21 @@
 					ул. Жолио-Кюри, д. 17-а
 
 			%a{:href => 'mailto:aquapost@dubna.net.ru?subject=site_feedback'}
+				aquapost@dubna.net.ru
 
 
 
 		.right-block
 			%table
 				%tbody
-					%tr.padding-bottom
-						%td
+					%tr.padding-bottom1
+						%td.row-1st
 							%a.menu-link{:href=> '#'} О КОМПАНИИ
-						%td
+						%td.row-2nd
 							%a.menu-link{:href=> '#'} ДИЛЕРАМ
-						%td
+						%td.row-3rd
 							%a.menu-link{:href=> '#'} КОНТАКТЫ
-						%td
+						%td.row-4th
 							%a.menu-link{:href=> '#'} ГДЕ КУПИТЬ
 
 					%tr
@@ -48,12 +49,12 @@
 						%td &nbsp;
 						%td &nbsp;
 
-					%tr.padding-bottom
-						%td
+					%tr.padding-bottom2
+						%td.row-1st
 							%ul.list
 								%li Холодная вода
 								%li Сорбционная очистка
-						%td
+						%td.row-2nd
 							%ul.list
 								%li Горячая вода
 								%li Удаление железа
@@ -63,38 +64,38 @@
 								%li Катриджи высокой производительности
 
 					%tr
-						%td
+						%td.row-1st
 							.links
 								%a{:href => '#'}
 									Технические цели
 									%i.icon-arrow-right
-						%td
+						%td.row-2nd
 							.links
 								%a{:href => '#'}
 									Питьевые фильтры
 									%i.icon-arrow-right
-						%td &nbsp;
-						%td
+						%td.row-3rd &nbsp;
+						%td.row-4th
 							.links
 								%a{:href => '#'}
 									Другая продукция
 									%i.icon-arrow-right
 
 					%tr
-						%td
+						%td.row-1st
 							%ul.list
 								%li Дозаторы полифосфата
 								%li Картрижди PPH
-						%td
+						%td.row-2nd
 							%ul.list
 								%li Фильтр двойка
 								%li Сменные элементы
-						%td
+						%td.row-3rd
 							%ul.list
 								%li Фильтр тройка
 								%li Удаление железа
 
-						%td &nbsp;
+						%td.row-4th &nbsp;
 
 
 		.bottom
@@ -102,14 +103,15 @@
 				&copy; 2013 Компания «Акваполис»  Все права защищены.
 			%span.soc-links
 				Мы в социальных сетях
-				%a.soc-link
-					%i.icon-facebook
-				%a.soc-link
-					%i.icon-twitter
-				%a.soc-link
-					%i.icon-vkontakte
-				%a.soc-link
-					%i.icon-odnoklassniki
+				%span.links
+					%a.soc-link{:href => '#', :title => 'Facebook'}
+						%i.icon-facebook
+					%a.soc-link{:href => '#', :title => 'Twitter'}
+						%i.icon-twitter
+					%a.soc-link{:href => '#', :title => 'Vkontakte'}
+						%i.icon-vkontakte
+					%a.soc-link{:href => '#', :title => 'Odnoklassniki'}
+						%i.icon-odnoklassniki
 
 			%span.developer
 				%a{:href => '#'} Создание сайтов
