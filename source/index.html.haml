@@ -1,4 +1,47 @@
-.welcome
-  %h1 Middleman is Watching
-  %p.doc
-    = link_to 'Read Online Documentation', 'http://middlemanapp.com/', title: 'Read Online Documentation', target: '_blank'
+.main_page
+	%ul#main-gallery
+		%li
+			.elem
+				%img{:src => 'images/gallery/image_1.jpg'}
+				.text-block
+					.product-info
+						.product-name
+							Cold
+						%span.product-type
+							%span.ie-border-left
+							серия фильтров
+							%span.ie-border-right
+
+						%span.description
+							Магистральные фильтры для холдной воды
+
+						%img.shape{:src=> 'images/gallery/image_small_1.png'}
+
+		%li
+			.elem
+				%img{:src => 'images/gallery/image_1.jpg'}
+				.text-block
+					.product-info
+						.product-name
+							Warm
+						%span.product-type
+							%span.ie-border-left
+							серия фильтров
+							%span.ie-border-right
+
+						%span.description
+							Магистральные фильтры для горячей воды
+
+						%img.shape{:src=> 'images/gallery/image_small_1.png'}
+
+
+
+:javascript
+	$(document).ready(function(){
+		$('#main-gallery').bxSlider({
+		controls: true,
+		pager: false,
+		auto: true,
+		pause: 7000
+		});
+	});
