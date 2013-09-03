@@ -48,6 +48,8 @@
 #   end
 # end
 
+page "/index.html", :layout => :main_page
+
 activate :livereload
 
 set :css_dir, 'stylesheets'
