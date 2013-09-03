@@ -2,8 +2,8 @@
 	%input.search{:type=> 'text'}
 	%i.icon-search
 
-.left-menu
-	.elem
+.left-menu#left-block-menu
+	.elem.with-list
 		%span.list-header
 			%i.icon-plus-minus
 			очистка воды
@@ -27,11 +27,11 @@
 				%a{:href => '#'}
 					Картриджи высокой производительности
 
-	.elem
+	.elem.with-list
 		%span.list-header
 			%i.icon-plus-minus
 			технические цели
-		%ul.menu-list.hide
+		%ul.menu-list
 			%li
 				%a{:href => '#'}
 					Холодная вода
@@ -51,11 +51,11 @@
 				%a{:href => '#'}
 					Картриджи высокой производительности
 
-	.elem
+	.elem.with-list
 		%span.list-header
 			%i.icon-plus-minus
 			питьевые фильтры
-		%ul.menu-list.hide
+		%ul.menu-list
 			%li
 				%a{:href => '#'}
 					Холодная вода
@@ -77,27 +77,9 @@
 
 	.elem
 		%span.list-header
-			%i.icon-plus-minus
-			другая продукция
-		%ul.menu-list.hide
-			%li
-				%a{:href => '#'}
-					Холодная вода
-			%li
-				%a{:href => '#'}
-					Горячая вода
-			%li
-				%a{:href => '#'}
-					Механическая очистка
-			%li
-				%a{:href => '#'}
-					Сорбционная очистка
-			%li
-				%a{:href => '#'}
-					Удаление железа
-			%li
-				%a{:href => '#'}
-					Картриджи высокой производительности
+			%i.icon-right-arrow
+			%a{:href => '#'}
+				другая продукция
 
 
 .left-article-block

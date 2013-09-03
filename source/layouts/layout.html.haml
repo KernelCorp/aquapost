@@ -35,8 +35,6 @@
 		%link{:rel => 'stylesheet', :type => 'text/css', :href => 'stylesheets/main.css'}
 		%script{:type => 'text/javascript', :src => 'javascripts/jquery.min.js'}
 		%script{:type => 'text/javascript', :src => 'javascripts/jquery.bxslider.js'}
-		%script{:type => 'text/javascript', :src => 'javascripts/bootstrap.js'}
-
 	%body
 		#main-wrapper
 			= partial 'partials/callback_request'
@@ -48,3 +46,6 @@
 					= yield
 			.footer-spacer-elem
 			= partial 'partials/footer'
+
+			%script{:type => 'text/javascript', :src => 'javascripts/bootstrap.js'}
+			%script{:type => 'text/javascript', :src => 'javascripts/application.js'}
