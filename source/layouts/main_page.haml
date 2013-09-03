@@ -35,7 +35,6 @@
 		%link{:rel => 'stylesheet', :type => 'text/css', :href => 'stylesheets/main.css'}
 		%script{:type => 'text/javascript', :src => 'javascripts/jquery.min.js'}
 		%script{:type => 'text/javascript', :src => 'javascripts/jquery.bxslider.js'}
-		%script{:src=>"http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU", :type=>"text/javascript"}
 	%body
 		#main-wrapper
 			= partial 'partials/callback_request'
@@ -44,7 +43,6 @@
 				.left-block
 					= partial 'partials/left_block'
 				.right-block
-					= partial 'partials/promo'
 					= yield
 			.footer-spacer-elem
 			= partial 'partials/footer'
