@@ -34,6 +34,7 @@
 		-# Stylesheets
 		%link{:rel => 'stylesheet', :type => 'text/css', :href => 'stylesheets/main.css'}
 		%script{:type => 'text/javascript', :src => 'javascripts/jquery.min.js'}
+		%script{:type => 'text/javascript', :src => 'javascripts/jquery.bxslider.js'}
 	%body
 		#main-wrapper
 			= partial 'partials/callback_request'
@@ -42,7 +43,6 @@
 				.left-block
 					= partial 'partials/left_block'
 				.right-block
-					= partial 'partials/promo'
 					= yield
 			.footer-spacer-elem
 			= partial 'partials/footer'
