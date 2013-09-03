@@ -1,8 +1,8 @@
 .list-icons-bullets
 	list-style-type: none
-	margin-left: 50px
+	margin: -3px 0 28px 60px
 	li
-		margin-bottom: 10px
+		margin-bottom: 14px
 	li.item1
 		list-style-image:  url(../images/list-bullets/item1.png)
 	li.item2
@@ -13,10 +13,16 @@
 		list-style-image:  url(../images/list-bullets/item4.png)
 	li.item5
 		list-style-image:  url(../images/list-bullets/item5.png)
+.text-page-photo
+	float: right
+	margin: 43px 0 0 23px
 table.table
 	border: none
 	margin: auto
 	table-layout: fixed
+	margin: -7px 0 20px -2px
+	th, td
+		padding: 15px
 	tr.head
 		.left-corner
 			background: url('../images/round-corners.png') no-repeat
@@ -32,15 +38,44 @@ table.table
 		color: #ffffff
 	td
 		border: none
+	td.left-border
+		position: relative
+		span.side-border
+			position: absolute
+			height: 100%
+			width: 3px
+			left: 0
+			top: 0
+			background: url(../images/side_border.png)  repeat-y
+	td.right-border
+		position: relative
+		span.side-border
+			position: absolute
+			height: 100%
+			width: 3px
+			right: 0
+			top: 0
+			background: url(../images/side_border.png)  repeat-y
+	tr.bottom-border
+		td
+			height: 6px
+			padding: 0
+		td.left-corner
+			background: url(../images/bottom_corner.png) no-repeat
+		td.right-corner
+			background: url(../images/bottom_corner.png) -8px 0 no-repeat
+		td.middle
+			background: url(../images/border_bottom.png) 0 0 repeat-x
+
 	tr.even
 		background-color: #f3f8e8
 	th.first
-		width: 125px
+		width: 87px
 	th.second
-		width: 196px
+		width: 178px
 	th.third
-		width: 214px
+		width: 185px
 	th.fifth
-		width: 255px
+		width: 214px
 
 
