@@ -1,12 +1,47 @@
-// some code here
+html.lt-ie9
+	#main-gallery
+		.elem
+			.text-block
+				.product-info
+					.product-type
+						zoom: 1
+						overflow: visible
+						position: relative
+						padding:
+							left: 4px
+							right: 4px
+						filter: progid:DXImageTransform.Microsoft.Shadow(direction=180, strength=3, color=#888)
+						span.ie-border-left
+							background: url(../images/ie/gray-border-left.png) no-repeat left top
+							position: absolute
+							width: 3px
+							height: 100%
+							left: -3px
+							top: 0
+						span.ie-border-right
+							background: url(../images/ie/gray-border-right.png) no-repeat right top
+							position: absolute
+							width: 3px
+							height: 100%
+							right: -3px
+							top: 0
 html.lt-ie8
-	.header .logo,
-	.left-block,
-	.right-block
-		zoom: 1
-		display: inline
 
 	#main-gallery
 		.elem
 			width: 795px
 
+	[class^='icon-'],
+	.icon-plus-minus,
+	.icon-right-arrow
+		zoom: 1
+		display: inline
+		vertical-align: middle
+
+	.main_page
+		.promo-block
+			.elem
+				img
+					display: inline
+				.text
+					display: inline
