@@ -10,7 +10,9 @@ $(document).ready () ->
 			)
 			myPlacemark = new ymaps.Placemark res.geoObjects.get(0).geometry.getCoordinates()
 			myMap.geoObjects.add(myPlacemark)
-	ymaps.ready(init)
+
+	if (typeof ymaps != 'undefined')
+		ymaps.ready(init)
 
 
 
