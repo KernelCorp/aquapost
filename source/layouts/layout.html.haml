@@ -40,8 +40,8 @@
 		%script{:type => 'text/javascript', :src => 'javascripts/jquery.bxslider.js'}
 		%script{:src=>"http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU", :type=>"text/javascript"}
 	%body
+		= partial 'partials/callback_request'
 		#main-wrapper
-			= partial 'partials/callback_request'
 			= partial 'partials/header'
 			.content
 				.left-block
